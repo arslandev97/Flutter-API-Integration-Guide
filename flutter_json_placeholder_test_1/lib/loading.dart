@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_json_placeholder_test_1/Posts_api/home.dart';
+import 'package:flutter_json_placeholder_test_1/user_api/user_home.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'Images_api/image_home.dart';
@@ -21,7 +22,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     // TODO: implement initState
     super.initState();
     Timer(const Duration(seconds: 5), () {
-      Navigator.push(context, MaterialPageRoute(builder: (context)=> const ImageHomeDesign2()));
+      Navigator.push(context, MaterialPageRoute(builder: (context)=> const UserHome()));
     });
   }
 
